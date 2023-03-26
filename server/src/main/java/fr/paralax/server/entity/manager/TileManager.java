@@ -2,7 +2,11 @@ package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.story.antoine.*;
+<<<<<<< Updated upstream
 import fr.paralax.server.story.thomas_b.*;
+=======
+import fr.paralax.server.story.chopper.*;
+>>>>>>> Stashed changes
 import fr.paralax.server.story.tom.*;
 import fr.paralax.server.story.thomas_h.*;
 
@@ -123,6 +127,7 @@ public class TileManager {
         new TomVille().init();
         new TomVilleStart().init();
 
+
         //Start
         new EndGame().init();
         new EndSecond().init();
@@ -130,6 +135,41 @@ public class TileManager {
         new SecondStart().init();
         new SelectGame().init();
         new StartGame().init();
+
+        //Chopper
+
+        new ChopperBeggin().init();
+        new Beggin2().init();
+        new Beggin3().init();
+        new ChopperEnd1().init();
+        new ChopperEnd2().init();
+        new ChopperEnd3().init();
+        new ChopperStart().init();
+        new End4().init();
+        new End5().init();
+        new End6().init();
+        new End7().init();
+        new End8().init();
+        new End9().init();
+        new End10().init();
+        new GohanExplication().init();
+        new GohanExplication2().init();
+        new GohanExplication3().init();
+        new GohanExplication4().init();
+        new GohanQuestion().init();
+        new NagzomQuestion3().init();
+        new NagzormBadResponse().init();
+        new NagzormFailed().init();
+        new NagzormPatate().init();
+        new NagzormQuestion1().init();
+        new NagzormQuestion2().init();
+        new NagzomQuestion3().init();
+        new NagzormQuestion4().init();
+        new NagzormQuizz().init();
+        new NagzormQuizzSuccess().init();
+        new StartNagzorm().init();
+        new TrainingEnded().init();
+
     }
 
     public static TileFrame getFrameFromUUID(String uuid) {
