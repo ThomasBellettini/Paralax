@@ -9,7 +9,7 @@ public class AntoineYone extends TileFrame {
     public AntoineYone() {
         super(UserType.ANTOINE, "30",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "yasuo_vs_yone.jpg", "",
                 "", () -> "");
         redirectMap.put("Je décide d'attendre et je remarque que la légende du DRUNKED OLAF est vraie et qu'il se trouve 10 mètre derrière moi.", null);
         redirectMap.put("Je l'attend pour marave le Yone.", new AntoineDrunkedOlaf());

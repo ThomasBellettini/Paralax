@@ -9,7 +9,7 @@ public class AntoineMonster extends TileFrame {
     public AntoineMonster() {
         super(UserType.ANTOINE, "22",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_monster.png", "",
                 "", () -> "");
         redirectMap.put("On prend une monster et on continue de coder jusque 3h du matin.", null);
     }

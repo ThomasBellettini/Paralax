@@ -9,7 +9,7 @@ public class AntoineEpeeDash2 extends TileFrame {
     public AntoineEpeeDash2() {
         super(UserType.ANTOINE, "12",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_yone.jpg", "",
                 "", () -> "");
         redirectMap.put("Cependant je tombe façe à un Yone personnage de LoL avec un ratio de 27/4/0 feed par un Sett sauvage.", new AntoineYone());
     }

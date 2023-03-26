@@ -9,7 +9,7 @@ public class AntoineInscription extends TileFrame {
     public AntoineInscription() {
         super(UserType.ANTOINE, "19",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "yasuo_stadium.png", "",
                 "", () -> "");
         redirectMap.put("Je m'inscris au tournoi et je tire au sort mon adversaire :", null);
         redirectMap.put("Je tire au sort Chopper.", new AntoineChopper());

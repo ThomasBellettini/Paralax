@@ -9,7 +9,7 @@ public class AntoineVillageMort extends TileFrame {
     public AntoineVillageMort() {
         super(UserType.ANTOINE, "28",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_akali.jpg", "",
                 "", () -> "");
         redirectMap.put("Une Akali surgit d'un buisson et malgré mes efforts je me fais tuer puisqu'elle est diamant.", new AntoineMort());
     }

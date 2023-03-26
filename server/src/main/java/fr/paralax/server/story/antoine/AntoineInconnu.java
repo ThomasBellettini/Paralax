@@ -9,7 +9,7 @@ public class AntoineInconnu extends TileFrame {
     public AntoineInconnu() {
         super(UserType.ANTOINE, "16",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "inconnu.jpg", "",
                 "", () -> "");
         redirectMap.put("Que dois-je faire ?", null);
         redirectMap.put("Je décide de faire un têtes à têtes avec la personne qui me fixe.", new AntoineInconnuMechant());

@@ -9,7 +9,7 @@ public class AntoineVictoire extends TileFrame {
     public AntoineVictoire() {
         super(UserType.ANTOINE, "27",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "blue", "",
                 "", () -> "");
         redirectMap.put("Je me réveille dans mon lit et je me dis que c'était qu'un rêve et je décide de prendre une " +
                 "douche. Cependant en passant devant mon miroir je remarque que mes cheveux sont devenu bleu.", null);

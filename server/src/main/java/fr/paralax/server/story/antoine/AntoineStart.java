@@ -9,7 +9,7 @@ public class AntoineStart extends TileFrame {
     public AntoineStart() {
         super(UserType.ANTOINE, "25",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "blue", "",
                 "", () -> "");
         redirectMap.put("On est fatigué, es qu'on prend une monster.", null);
         redirectMap.put("Oui, on prend une monster.", new AntoineMonster());

@@ -9,7 +9,7 @@ public class AntoineInconnuGentil extends TileFrame {
     public AntoineInconnuGentil() {
         super(UserType.ANTOINE, "17",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "inconnu.jpg", "",
                 "", () -> "");
         redirectMap.put("L'inconnu me raconte sa vie et m'apprend que des grosses pointures d'Epitech Nancy vont s'affronter dans un tournoi" +
                 " dans la ville de beauvais. Il me propose de m'accopagner jusque la ville et j'accepte.", new AntoineBeauvais());

@@ -9,7 +9,7 @@ public class AntoineMiroir extends TileFrame {
     public AntoineMiroir() {
         super(UserType.ANTOINE, "20",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_mirroir.png", "",
                 "", () -> "");
     redirectMap.put("Je remarque m'être transformé en tant que Yasuo, personnage de LoL" +
             "et que je porte un katana à ma ceinture.", new AntoineMiroir2());

@@ -9,7 +9,7 @@ public class AntoineForetFin extends TileFrame {
     public AntoineForetFin() {
         super(UserType.ANTOINE, "14",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "yasuo_village.png", "",
                 "", () -> "");
         redirectMap.put("Au bout de 10 min de course intense, j'arrive au village, un villageois me demande de l'aide." +
                 "Est-ce que je les aides ?", null);

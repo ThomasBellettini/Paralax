@@ -9,7 +9,7 @@ public class AntoineBeauvais extends TileFrame {
     public AntoineBeauvais() {
         super(UserType.ANTOINE, "2",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_village.png", "",
                 "", () -> "");
         redirectMap.put("J'arrive apres 2h de marche dans la ville de Beauvais qui a comme maire Nagzorm et qui sur une " +
                 "grande place annonce que le plaisir IL EST JUSTE A DROITE -> ->", null);

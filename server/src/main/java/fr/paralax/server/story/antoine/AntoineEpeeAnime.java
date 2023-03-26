@@ -9,7 +9,7 @@ public class AntoineEpeeAnime extends TileFrame {
     public AntoineEpeeAnime() {
         super(UserType.ANTOINE, "10",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_livai.jpg", "",
                 "", () -> "");
         redirectMap.put("Je me crois dans l'Attaque des Titans et je me jette sur l'ennemi telle Livaï et je me fais tuer.", new AntoineMort());
     }

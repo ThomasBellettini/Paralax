@@ -9,7 +9,7 @@ public class AntoineDodo extends TileFrame {
     public AntoineDodo() {
         super(UserType.ANTOINE, "7",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_village.png", "",
                 "", () -> "");
         redirectMap.put("On s'endort et on se réveille dans un endroit inconnu", new AntoineVois());
     }

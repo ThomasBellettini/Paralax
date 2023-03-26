@@ -9,7 +9,7 @@ public class AntoineYoneMort extends TileFrame {
     public AntoineYoneMort() {
         super(UserType.ANTOINE, "31",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_yone.jpg", "",
                 "", () -> "");
         redirectMap.put("Le Yone me dit : Mon chère frère, tu es devenu bon.", new AntoineVictoire());
     }
