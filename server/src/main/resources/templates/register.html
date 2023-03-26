@@ -85,19 +85,14 @@
 
                 <div class="card card-border card-border-top bg-color-light">
                     <div class="card-body">
-                        <h2 class="card-title text-6 mb-2 font-weight-bold text-center">Paralax Connexion</h2>
-                        <p class="card-text text-center">Merci de rentrer vos informations de connexion pour accèder
-                            à l'application Paralax Story</p>
+                        <h2 class="card-title text-6 mb-2 font-weight-bold text-center">Paralax Inscription</h2>
+                        <p class="card-text text-center">Merci de rentrer vos les informations de votre histoire afin de pouvoir vous créez un compte.</p>
 
-                        <form class="contact-form form-with-icons" action="/login" method="post">
-
-                            <div id="error_msg" class="form_error alert alert-danger mt-4" th:classappend="${error == 'none'} ? 'd-none' : ''">
-                                <strong th:text="${error}"></strong>
-                            </div>
+                        <form class="contact-form form-with-icons" action="/register" method="post">
 
                             <div class="row">
                                 <div class="form-group">
-                                    <label class="form-label mb-1 text-2">Nom de votre Histoire</label>
+                                    <label class="form-label mb-1 text-2">Nom de votre histoire</label>
                                     <div class="position-relative">
                                         <i class="icons icon-envelope text-color-primary text-3 position-absolute left-15 top-50pct transform3dy-n50"></i>
                                         <input type="text" value="" id="username" data-msg-required="Veuillez soumettre votre Username !" maxlength="100" class="form-control text-3 h-auto py-2" name="id" required>
@@ -115,9 +110,7 @@
                             </div>
                             <div class="row">
                                 <div class="form-group col text-center">
-                                    <a href="/register">Vous n'avez pas encore de compte ?</a><br>
-
-                                    <input type="submit" value="Connexion" id="submit_login" class=" btn btn-primary">
+                                    <input type="submit" value="Inscription" id="submit_login" class=" btn btn-primary">
                                 </div>
                             </div>
                             <div>

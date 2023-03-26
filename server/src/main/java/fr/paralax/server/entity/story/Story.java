@@ -3,6 +3,7 @@ package fr.paralax.server.entity.story;
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.manager.TileManager;
 import fr.paralax.server.storage.StorageClass;
+import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,7 +36,7 @@ public class Story extends StorageClass {
 
     public Story(String storyName, String password, String tileSaved) {
         this.storyName = storyName;
-        this.password = password;
+        this.password = DigestUtils.sha256Hex(password);;
         this.tileSaved = tileSaved;
         this.storedValue = new HashMap<>();
     }
@@ -58,5 +59,9 @@ public class Story extends StorageClass {
 
     public void setTileSaved(String tileSaved) {
         this.tileSaved = tileSaved;
+    }
+
+    public boolean isSamePass(String str) {
+        return (DigestUtils.sha256Hex(str).equals(password));
     }
 }

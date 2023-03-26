@@ -21,6 +21,7 @@ public class StoryRoute {
                 break;
             }
         }
+        if (story == null) new ModelAndView("redirect:/?error=Session Exprired !");
         return new ModelAndView("story");
     }
 
