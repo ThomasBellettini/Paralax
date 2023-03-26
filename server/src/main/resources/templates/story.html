@@ -5,31 +5,13 @@
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Dashboard - Home</title>
-    <meta property="og:site_name" content="Builder Design" />
-    <meta property="og:url" content="https://bd.shurisko.fr/" />
-    <meta property="og:title" content="Builder Design, Minecraft Creative Building Team !" />
-    <meta property="og:description" content="Minecraft Creative Building Team !" />
-    <meta property="og:color" content="#fffff" />
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bd.shurisko.fr/my_img/logo.png">
-    <meta name="theme-color" content="#fffff">
-
-    <meta name="description" content="Builder Design, Minecraft Creative Building Team !">
-    <meta name="author" content="shurisko">
-
+    <title>Paralax</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-
     <!-- Web Fonts  -->
     <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/animate/animate.compat.css">
@@ -37,38 +19,62 @@
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/owl.carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/owl.carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/magnific-popup/magnific-popup.min.css">
-
     <!-- Theme CSS -->
     <link rel="stylesheet" href="https://r.shurisko.fr/css/theme.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/css/theme-elements.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/css/theme-blog.css">
     <link rel="stylesheet" href="https://r.shurisko.fr/css/theme-shop.css">
-
     <!-- Current Page CSS -->
     <link rel="stylesheet" href="https://r.shurisko.fr/vendor/circle-flip-slideshow/css/component.css">
-
     <!-- Skin CSS -->
     <link id="skinCSS" rel="stylesheet" href="https://r.shurisko.fr/css/skins/default.css">
-
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="https://r.shurisko.fr/css/custom.css">
-
     <!-- Head Libs -->
     <script src="https://r.shurisko.fr/vendor/modernizr/modernizr.min.js"></script>
-
 </head>
 <body>
 <div>
-    <div role="main" class="main" style="padding: 5em;">
-                <div role="main" class="main" style="background: red; height: 512px;">
-
-                </div>
-                <div role="main" class="main" style="background: blue;">
-                    <p>Salam les khoyas voila les réponse potentiel UwU</p>
-                </div>
+    <div role="main" class="main">
+        <div style="background: red; height: 750px; width: 1920px;" id="main">
+        </div>
+        <div style="border-radius: 25px; border: 2px solid black; padding: 20px; margin: 1em; font-size: 32px;" class="text-center">
+            <div id="button">
+            </div>
+        </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (e) {
+        updateThisPageUwU("update_local");
+    })
+
+    function updateThisPageUwU(button) {
+        fetch("/click/" + button, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(response => response.json()).then(json => updatePageWithJSONOwO(json));
+    }
+
+    function updatePageWithJSONOwO(json) {
+        let divMain = document.getElementById("main");
+        let divButton = document.getElementById("button");
+
+        if (json.html && json.html != null)
+            divMain.innerHTML = json.html;
+        if (json.background && json.background != null && json.background != "")
+            divMain.style.background = json.background;
+        divMain.style.backgroundRepeat = "no-repeat";
+
+        divButton.innerHTML = json.button_html;
+    }
+
+</script>
 
 <!-- Vendor -->
 <script src="https://r.shurisko.fr/vendor/jquery/jquery.min.js"></script>

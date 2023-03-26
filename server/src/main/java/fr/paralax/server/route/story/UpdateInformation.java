@@ -3,6 +3,7 @@ package fr.paralax.server.route.story;
 import fr.paralax.server.ServerApplication;
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
+import fr.paralax.server.langage.LanguageUtils;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 @RestController
 public class UpdateInformation {
@@ -31,11 +33,18 @@ public class UpdateInformation {
         if (story == null) return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(content);
 
         if (!button.equalsIgnoreCase("update_local")) {
-            TileFrame.ButtonState redirect = story.getTile().onClickOnButton(story, button);
-            if (redirect == TileFrame.ButtonState.UPDATE) story.getTile().updateRedirection(story, button);
+            System.out.println(button);
+            String equalsText = story.getTile().getFromButtonUUID(button);
+            System.out.println(equalsText);
+
+            TileFrame.ButtonState redirect = story.getTile().onClickOnButton(story, equalsText);
+            if (redirect == TileFrame.ButtonState.UPDATE) story.getTile().updateRedirection(story, equalsText);
         }
-        content.put("html", story.getTile().getHtmlContent());
-        content.put("button_html", story.getTile().generateButton());
+        content.put("html", LanguageUtils.translate(story.getTile().getHtmlContent()));
+        content.put("button_html", LanguageUtils.translate(story.getTile().generateButton()));
+        content.put("background", (story.getTile().getPictureBackground().contains("https") ? String.format("url(\'%s\')", story.getTile().getPictureBackground()) : story.getTile().getPictureBackground()));
+        content.put("antagonist", story.getTile().getPictureAntagonist());
+        content.put("protagonist", story.getTile().getPictureProtagonist());
         return ResponseEntity.status(HttpStatus.OK).body(content);
     }
 

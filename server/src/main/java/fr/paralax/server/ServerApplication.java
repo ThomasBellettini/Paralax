@@ -26,7 +26,7 @@ public class ServerApplication implements CommandLineRunner {
 
         storyGStorage.init("./story/", Story.class);
 
-//        Story story = new Story("Tom Le PD", "password", TileManager.tileManagerList.get(0).getUuid());
-//        storyGStorage.saveEntity(story);
+    //    Story story = new Story("Tom Le PD", "password", TileManager.tileManagerList.get(0).getUuid());
+    //    storyGStorage.saveEntity(story);
     }
 }
