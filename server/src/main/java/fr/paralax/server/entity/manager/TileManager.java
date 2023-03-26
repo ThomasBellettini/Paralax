@@ -2,6 +2,7 @@ package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.story.antoine.*;
+import fr.paralax.server.story.tom.*;
 import fr.paralax.server.story.thomas_h.ThomasAsk1;
 import fr.paralax.server.story.thomas_h.ThomasAsk2;
 import fr.paralax.server.story.thomas_h.ThomasAsk3;
@@ -40,7 +41,6 @@ import fr.paralax.server.story.thomas_h.ThomasQuit7;
 import fr.paralax.server.story.thomas_h.ThomasQuit8;
 import fr.paralax.server.story.thomas_h.ThomasStart;
 import fr.paralax.server.story.thomas_h.ThomasGame;
-import fr.paralax.server.story.tom.*;
 
 import java.util.ArrayList;
 import java.util.List;
