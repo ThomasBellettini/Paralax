@@ -93,11 +93,11 @@ public class TileManager {
         new ThomasGame().init();
     }
 
-/*    public static TileFrame getFrameFromUUID(String uuid) {
+    public static TileFrame getFrameFromUUID(String uuid) {
         for (TileFrame tmp : tileManagerList) {
             if (tmp.getUuid().equalsIgnoreCase(uuid)) return tmp;
         }
         return null;
-    }*/
+    }
 
 }
