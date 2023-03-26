@@ -1,6 +1,7 @@
 package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
+import fr.paralax.server.story.antoine.*;
 import fr.paralax.server.story.thomas_h.ThomasAsk1;
 import fr.paralax.server.story.thomas_h.ThomasAsk2;
 import fr.paralax.server.story.thomas_h.ThomasAsk3;
@@ -91,6 +92,40 @@ public class TileManager {
         new ThomasQuit8().init();
         new ThomasStart().init();
         new ThomasGame().init();
+
+        //Antoine
+        new AntoineAideVillage().init();
+        new AntoineBeauvais().init();
+        new AntoineBelet().init();
+        new AntoineChopper().init();
+        new AntoineChopperLose().init();
+        new AntoineChopperWin().init();
+        new AntoineDodo().init();
+        new AntoineDrunkedOlaf().init();
+        new AntoineEpee().init();
+        new AntoineEpeeAnime().init();
+        new AntoineEpeeDash().init();
+        new AntoineEpeeDash2().init();
+        new AntoineForetEntree().init();
+        new AntoineForetFin().init();
+        new AntoineForetMiddle().init();
+        new AntoineInconnu().init();
+        new AntoineInconnuGentil().init();
+        new AntoineInconnuMechant().init();
+        new AntoineInscription().init();
+        new AntoineMiroir().init();
+        new AntoineMiroir2().init();
+        new AntoineMonster().init();
+        new AntoineMort().init();
+        new AntoineRacoon().init();
+        new AntoineStart().init();
+        new AntoineTom().init();
+        new AntoineVictoire().init();
+        new AntoineVillageMort().init();
+        new AntoineVois().init();
+        new AntoineYone().init();
+        new AntoineYoneMort().init();
+        new AntoineYoneTuer().init();
     }
 
     public static TileFrame getFrameFromUUID(String uuid) {
