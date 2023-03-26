@@ -3,7 +3,6 @@ package fr.paralax.server.story.thomas_h;
 import fr.paralax.server.entity.TileFrame;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class ThomasAsk20 extends TileFrame {
 
@@ -11,7 +10,7 @@ public class ThomasAsk20 extends TileFrame {
 
         super(UserType.THOMAS_H, "120",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "crash.gif", "",
                 "", () -> "");
             redirectMap.put("Vous ne pouvez pas accéder à l'inventaire", null);
             redirectMap.put("Explorer les alentours", new ThomasAsk21());

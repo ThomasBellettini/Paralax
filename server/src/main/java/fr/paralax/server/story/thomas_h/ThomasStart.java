@@ -1,13 +1,8 @@
 package fr.paralax.server.story.thomas_h;
 
 import fr.paralax.server.entity.TileFrame;
-import fr.paralax.server.entity.story.Story;
-import fr.paralax.server.story.thomas_b.EndGame;
-import fr.paralax.server.story.thomas_b.SelectGame;
-import fr.paralax.server.story.thomas_b.StartGame;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class ThomasStart extends TileFrame {
 

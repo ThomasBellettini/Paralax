@@ -3,7 +3,6 @@ package fr.paralax.server.story.thomas_h;
 import fr.paralax.server.entity.TileFrame;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class ThomasAsk21 extends TileFrame {
 
@@ -11,7 +10,7 @@ public class ThomasAsk21 extends TileFrame {
 
         super(UserType.THOMAS_H, "121",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "crash.gif", "",
                 "", () -> "");
             redirectMap.put("Vous vous rendez compte qu'un mur invisible vous bloque dans une certaine zone", new ThomasAsk23());
     }

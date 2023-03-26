@@ -1,10 +1,8 @@
 package fr.paralax.server.story.thomas_h;
 
 import fr.paralax.server.entity.TileFrame;
-import fr.paralax.server.entity.story.Story;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class ThomasQuit1 extends TileFrame {
     
