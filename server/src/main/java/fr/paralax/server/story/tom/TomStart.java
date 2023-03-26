@@ -12,7 +12,7 @@ public class TomStart extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "black_background.png", "",
                 "", () -> "");
-        redirectMap.put("continue", new TomChuteLibre()); //TODO: Start
+        redirectMap.put("...", new TomChuteLibre()); //TODO: Start
 
     }
 

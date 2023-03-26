@@ -12,9 +12,9 @@ public class TomParachute extends TileFrame {
                     TileResponseType.RESPONSE, new HashMap<>(),
                     "", "",
                     "", () -> "");
-            redirectMap.put("le lac là-bas a l'air plutôt sympas", new TomLacStart());
+            redirectMap.put("le lac là-bas a l'air plutôt sympas", new TomForetStart());
             redirectMap.put("je penses qu'il serait plus judicieux d'aller me poser dans la forêt à côté", new TomForetStart());
-            redirectMap.put(("la ville au fond m'attire pas mal"), new  TomVilleStart());
+            redirectMap.put(("la ville au fond m'attire pas mal"), new  TomForetStart());
 
         }
 }

@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class TomVilleStart extends TileFrame {
 
     public TomVilleStart() {
-        super(UserType.TOM, "4",
+        super(UserType.TOM, "8",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

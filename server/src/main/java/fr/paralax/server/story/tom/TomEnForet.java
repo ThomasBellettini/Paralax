@@ -2,13 +2,11 @@ package fr.paralax.server.story.tom;
 
 import fr.paralax.server.entity.TileFrame;
 
-import java.util.HashMap;
+public class TomEnForet extends TileFrame {
 
-public class TomForetStart extends TileFrame {
-
-        public TomForetStart() {
-            super(UserType.TOM, "6",
-                    TileResponseType.DISCUSSION, new HashMap<>(),
+        public TomEnForet() {
+            super(UserType.TOM, "12",
+                    TileResponseType.DISCUSSION, null,
                     "", "",
                     "", () -> "");
             redirectMap.put("Il se dirige vers la forêt", new TomForet());
