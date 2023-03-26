@@ -2,11 +2,8 @@ package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.story.antoine.*;
-<<<<<<< Updated upstream
 import fr.paralax.server.story.thomas_b.*;
-=======
 import fr.paralax.server.story.chopper.*;
->>>>>>> Stashed changes
 import fr.paralax.server.story.tom.*;
 import fr.paralax.server.story.thomas_h.*;
 
