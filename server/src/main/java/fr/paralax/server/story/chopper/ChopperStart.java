@@ -6,14 +6,14 @@ import fr.paralax.server.entity.story.Story;
 
 import java.util.HashMap;
 
-public class Start extends TileFrame {
+public class ChopperStart extends TileFrame {
 
-    public Start() {
+    public ChopperStart() {
         super(UserType.CHOPPER, "1",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("Suite", new Beggin());
+        redirectMap.put("Suite", new ChopperBeggin());
     }
 
 

@@ -3,13 +3,13 @@ package fr.paralax.server.story.chopper;
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
 import java.util.HashMap;
-public class End3 extends TileFrame {
-    public End3() {
-        super(UserType.CHOPPER, "27",
+public class ChopperEnd2 extends TileFrame {
+    public ChopperEnd2() {
+        super(UserType.CHOPPER, "26",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("TU, TU, LE LACHES, AAAAAAAAAAAAAAAAAAAH", new End4());
+        redirectMap.put("Alors tu es venu, je t'attendais...", new ChopperEnd3());
     }
     @Override
     public ButtonState onClickOnButton(Story story, String string) {

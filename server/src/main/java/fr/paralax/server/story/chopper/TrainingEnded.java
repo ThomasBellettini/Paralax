@@ -9,7 +9,7 @@ public class TrainingEnded extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("Apres avoir suivi votre entrainement, vous vous rendez à CalimeroCity,<nline> lieu de l'éxécution...", new End1());
+        redirectMap.put("Apres avoir suivi votre entrainement, vous vous rendez à CalimeroCity,<nline> lieu de l'éxécution...", new ChopperEnd1());
     }
     @Override
     public ButtonState onClickOnButton(Story story, String string) {
