@@ -2,6 +2,7 @@ package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.story.antoine.*;
+import fr.paralax.server.story.thomas_b.*;
 import fr.paralax.server.story.tom.*;
 import fr.paralax.server.story.thomas_h.*;
 
@@ -121,6 +122,14 @@ public class TileManager {
         new TomSuperHero().init();
         new TomVille().init();
         new TomVilleStart().init();
+
+        //Start
+        new EndGame().init();
+        new EndSecond().init();
+        new EndThird().init();
+        new SecondStart().init();
+        new SelectGame().init();
+        new StartGame().init();
     }
 
     public static TileFrame getFrameFromUUID(String uuid) {
