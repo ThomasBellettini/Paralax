@@ -9,7 +9,7 @@ public class AntoineTom extends TileFrame {
     public AntoineTom() {
         super(UserType.ANTOINE, "26",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_sett.jpg", "",
                 "", () -> "");
         redirectMap.put("Je commence a me battre contre Tom et je le bat en moins d'une minute mais au moment de perdre " +
                 "il me traite de Gold II alors que je suis Bronze III.", new AntoineChopper());

@@ -9,7 +9,7 @@ public class AntoineBelet extends TileFrame {
     public AntoineBelet() {
         super(UserType.ANTOINE, "3",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_olaf.jpeg", "",
                 "", () -> "");
         redirectMap.put("Je me bat contre le DRUNKED OLAF de belet avec son fameux set Kraken, Canon Ultrarapide et " +
                 "Malmortius et je me fais défoncer, au moment de m'achever il me demandera de lui redonner un vers " +

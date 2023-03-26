@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class TomForetStart extends TileFrame {
 
         public TomForetStart() {
-            super(UserType.TOM, "1",
+            super(UserType.TOM, "6",
                     TileResponseType.DISCUSSION, new HashMap<>(),
                     "", "",
                     "", () -> "");

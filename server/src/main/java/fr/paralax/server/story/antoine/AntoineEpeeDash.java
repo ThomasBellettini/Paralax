@@ -9,7 +9,7 @@ public class AntoineEpeeDash extends TileFrame {
     public AntoineEpeeDash() {
         super(UserType.ANTOINE, "11",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_livai.jpg", "",
                 "", () -> "");
         redirectMap.put("Je dash sur l'ennemi et grace à mon épée ca me permet de tuer trois bandits en un seul coup.", new AntoineEpeeDash2());
     }

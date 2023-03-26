@@ -9,7 +9,7 @@ public class AntoineChopperLose extends TileFrame {
     public AntoineChopperLose() {
         super(UserType.ANTOINE, "5",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "blue", "",
                 "", () -> "");
         redirectMap.put("sa victoire car il est platine 2 et moi un pauvre Bronze 4", new AntoineVictoire());
     }

@@ -9,7 +9,7 @@ public class AntoineForetMiddle extends TileFrame {
     public AntoineForetMiddle() {
         super(UserType.ANTOINE, "15",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_village.png", "",
                 "", () -> "");
         redirectMap.put("Au bout d'une heure d'exploration, je vois au loin un village en feu de plus je vois des " +
                 "villageois fuir de bandits.", new AntoineForetFin());

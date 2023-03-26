@@ -9,7 +9,7 @@ public class AntoineAideVillage extends TileFrame {
     public AntoineAideVillage() {
         super(UserType.ANTOINE, "1",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_village.png", "",
                 "", () -> "");
         redirectMap.put("Je remarque qu'à ma ceinture je possede un katana et que mes vêtements sont différent." +
                 " Quand je m'approche des bandits je me pose une question cruciale :", new AntoineEpee());

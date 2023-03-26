@@ -2,6 +2,7 @@ package fr.paralax.server.entity.manager;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.story.antoine.*;
+import fr.paralax.server.story.tom.*;
 import fr.paralax.server.story.thomas_h.ThomasAsk1;
 import fr.paralax.server.story.thomas_h.ThomasAsk2;
 import fr.paralax.server.story.thomas_h.ThomasAsk3;
@@ -40,8 +41,6 @@ import fr.paralax.server.story.thomas_h.ThomasQuit7;
 import fr.paralax.server.story.thomas_h.ThomasQuit8;
 import fr.paralax.server.story.thomas_h.ThomasStart;
 import fr.paralax.server.story.thomas_h.ThomasGame;
-import fr.paralax.server.story.tom.TomResponse1;
-import fr.paralax.server.story.tom.TomToilette;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -126,6 +125,38 @@ public class TileManager {
         new AntoineYone().init();
         new AntoineYoneMort().init();
         new AntoineYoneTuer().init();
+
+        //Tom
+        new TomAffameCity().init();
+        new TomAffameForet().init();
+        new TomAffameLake().init();
+        new TomAllucination().init();
+        new TomChuteLibre().init();
+        new TomDefonce().init();
+        new TomDefonce1().init();
+        new TomDefonce2().init();
+        new TomDefonce3().init();
+        new TomDefonce4().init();
+        new TomEndormi().init();
+        new TomEnForet().init();
+        new TomFin().init();
+        new TomFinMort().init();
+        new TomFinVivant().init();
+        new TomForet().init();
+        new TomForetChampignon().init();
+        new TomForetContinue().init();
+        new TomForetStart().init();
+        new TomLac().init();
+        new TomLacStart().init();
+        new TomMortExploser().init();
+        new TomMortOverdose().init();
+        new TomMortTomber().init();
+        new TomMortTue().init();
+        new TomParachute().init();
+        new TomStart().init();
+        new TomSuperHero().init();
+        new TomVille().init();
+        new TomVilleStart().init();
     }
 
     public static TileFrame getFrameFromUUID(String uuid) {

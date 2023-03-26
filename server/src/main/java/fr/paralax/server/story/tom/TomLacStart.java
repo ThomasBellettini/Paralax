@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class TomLacStart  extends TileFrame{
 
         public TomLacStart() {
-            super(UserType.TOM, "2",
+            super(UserType.TOM, "7",
                     TileResponseType.DISCUSSION, new HashMap<>(),
                     "", "",
                     "", () -> "");

@@ -5,7 +5,7 @@ import fr.paralax.server.entity.story.Story;
 
 public class TomDefonce2 extends TileFrame {
     public TomDefonce2() {
-        super(UserType.TOM, "10",
+        super(UserType.TOM, "14",
                 TileResponseType.DISCUSSION, null,
                 "", "",
                 "", () -> "");

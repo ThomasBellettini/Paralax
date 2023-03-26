@@ -9,7 +9,7 @@ public class AntoineVois extends TileFrame {
     public AntoineVois() {
         super(UserType.ANTOINE, "29",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "yasuo_burn.png", "",
                 "", () -> "");
         redirectMap.put("Je regarde autour de moi, que vois-je ?.", null);
         redirectMap.put("Un miroir ?", new AntoineMiroir());

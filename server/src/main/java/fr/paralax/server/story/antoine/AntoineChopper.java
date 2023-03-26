@@ -9,7 +9,7 @@ public class AntoineChopper extends TileFrame {
     public AntoineChopper() {
         super(UserType.ANTOINE, "4",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "blue", "",
                 "", () -> "");
         redirectMap.put("Chopper commence a s'avancer a toute vitesse avec son Poney, le combat est rapide et il se finit par : ", null);
     }

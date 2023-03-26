@@ -11,7 +11,7 @@ public class ThomasStart extends TileFrame {
     public ThomasStart() {
         super(UserType.THOMAS_H, "1",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "crash.gif", "",
                 "", () -> "");
         redirectMap.put("...", null);
         redirectMap.put("Rentrer chez soi", new ThomasAsk1());

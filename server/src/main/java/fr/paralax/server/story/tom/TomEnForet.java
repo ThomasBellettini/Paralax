@@ -2,12 +2,13 @@ package fr.paralax.server.story.tom;
 
 import fr.paralax.server.entity.TileFrame;
 
-public class TomMortOverdose extends TileFrame {
+public class TomEnForet extends TileFrame {
 
-        public TomMortOverdose() {
-            super(UserType.TOM, "17",
+        public TomEnForet() {
+            super(UserType.TOM, "12",
                     TileResponseType.DISCUSSION, null,
                     "", "",
                     "", () -> "");
+            redirectMap.put("Il se dirige vers la forêt et disparait", new TomFin());
         }
 }

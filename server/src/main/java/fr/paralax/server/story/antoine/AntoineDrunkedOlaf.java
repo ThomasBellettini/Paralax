@@ -9,7 +9,7 @@ public class AntoineDrunkedOlaf extends TileFrame {
     public AntoineDrunkedOlaf() {
         super(UserType.ANTOINE, "8",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yasuo_vs_olaf.jpeg", "",
                 "", () -> "");
         redirectMap.put("Le DRUNKED OLAF m'aide à tuer le Yone et juste avant de mourir le Yone me dit :", new AntoineYoneMort());
     }
