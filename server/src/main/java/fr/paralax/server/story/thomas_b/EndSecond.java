@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class EndSecond extends TileFrame {
 
     public EndSecond () {
-        super(UserType.THOMAS_B, "5",
+        super(UserType.THOMAS_B, "dzf5",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

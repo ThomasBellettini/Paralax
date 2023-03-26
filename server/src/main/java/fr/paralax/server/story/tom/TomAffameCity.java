@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class TomAffameCity extends TileFrame {
 
         public TomAffameCity() {
-            super(UserType.TOM, "2",
+            super(UserType.TOM, "50",
                     TileResponseType.RESPONSE, new HashMap<>(),
                     "", "",
                     "", () -> "");

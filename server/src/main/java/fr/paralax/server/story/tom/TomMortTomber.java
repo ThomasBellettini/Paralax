@@ -20,7 +20,7 @@ public class TomMortTomber extends TileFrame {
         if (state == ButtonState.ERROR) return state;
 
         if (button.equalsIgnoreCase("aaaaaaaaaaaaaaaaaaaah")) {
-            story.getStoredValue().put("alive", new Story.Container(Boolean.class, false));
+            story.getStoredValue().put("alive", false);
             return ButtonState.REDIRECTION;
         }
         return ButtonState.UPDATE;

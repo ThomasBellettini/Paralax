@@ -7,32 +7,14 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Story extends StorageClass {
-
-    public static class Container {
-        private Class containerClass;
-        private Object object;
-
-        public Container(Class containerClass, Object object) {
-            this.containerClass = containerClass;
-            this.object = object;
-        }
-
-        public Class getContainerClass() {
-            return containerClass;
-        }
-
-        public Object getObject() {
-            return object;
-        }
-    }
-
     private String storyName;
     private String password;
     private String tileSaved;
 
-    private Map<String, Container> storedValue;
+    private Map<String, Object> storedValue;
 
     public Story(String storyName, String password, String tileSaved) {
         this.storyName = storyName;
@@ -53,7 +35,7 @@ public class Story extends StorageClass {
         return TileManager.getFrameFromUUID(this.tileSaved);
     }
 
-    public Map<String, Container> getStoredValue() {
+    public Map<String, Object> getStoredValue() {
         return storedValue;
     }
 

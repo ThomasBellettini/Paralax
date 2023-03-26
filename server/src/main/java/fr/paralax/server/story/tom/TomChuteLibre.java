@@ -8,10 +8,11 @@ import java.util.HashMap;
 public class TomChuteLibre extends TileFrame {
 
         public TomChuteLibre() {
-            super(UserType.TOM, "2",
+            super(UserType.TOM, "2524",
                     TileResponseType.RESPONSE, new HashMap<>(),
                     "", "",
                     "", () -> "");
+            redirectMap.put("Que pourrions nous faire?", null);
             redirectMap.put("psartek jsuis dans un rêve je referme les yeux et c'est finit", new TomMortExploser());
             redirectMap.put("atten dmais je suis dans un rêve je peux voler", new TomSuperHero());
         }

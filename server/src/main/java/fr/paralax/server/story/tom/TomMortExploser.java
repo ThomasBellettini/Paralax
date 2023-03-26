@@ -8,11 +8,11 @@ import java.util.HashMap;
 public class TomMortExploser extends TileFrame {
 
     public TomMortExploser() {
-        super(UserType.TOM, "3",
+        super(UserType.TOM, "358778",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("", new TomFin());
+        redirectMap.put("Boom!!!!", new TomFin());
     }
 
     @Override

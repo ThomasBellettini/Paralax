@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class EndGame extends TileFrame {
 
     public EndGame () {
-        super(UserType.THOMAS_B, "5",
+        super(UserType.THOMAS_B, "5zefd",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

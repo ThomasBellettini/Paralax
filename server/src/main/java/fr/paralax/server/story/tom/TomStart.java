@@ -12,7 +12,7 @@ public class TomStart extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "black_background.png", "",
                 "", () -> "");
-        redirectMap.put("...", new TomChuteLibre()); //TODO: Start
+        redirectMap.put("...", new TomChuteLibre());
 
     }
 
@@ -21,7 +21,7 @@ public class TomStart extends TileFrame {
         ButtonState state = super.onClickOnButton(story, button);
         if (state == ButtonState.ERROR) return state;
 
-        story.getStoredValue().put("alive", new Story.Container(Boolean.class, true));
+        story.getStoredValue().put("alive", true);
 
         return ButtonState.UPDATE;
     }

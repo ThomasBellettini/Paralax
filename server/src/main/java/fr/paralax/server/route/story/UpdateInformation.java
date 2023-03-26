@@ -38,7 +38,10 @@ public class UpdateInformation {
             System.out.println(equalsText);
 
             TileFrame.ButtonState redirect = story.getTile().onClickOnButton(story, equalsText);
-            if (redirect == TileFrame.ButtonState.UPDATE) story.getTile().updateRedirection(story, equalsText);
+            if (redirect == TileFrame.ButtonState.UPDATE) {
+                story.getTile().updateRedirection(story, equalsText);
+                ServerApplication.getInstance.storyGStorage.saveEntity(story);
+            }
         }
         content.put("html", LanguageUtils.translate(story.getTile().getHtmlContent()));
         content.put("button_html", LanguageUtils.translate(story.getTile().generateButton()));

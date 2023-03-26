@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class TomForetChampignon extends TileFrame {
     public TomForetChampignon() {
-        super(UserType.TOM, "40",
+        super(UserType.TOM, "450",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

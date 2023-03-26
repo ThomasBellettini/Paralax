@@ -2,6 +2,7 @@ package fr.paralax.server.story.antoine;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
+import fr.paralax.server.story.thomas_b.EndGame;
 
 import java.util.HashMap;
 
@@ -11,7 +12,7 @@ public class AntoineMonster extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "yasuo_monster.png", "",
                 "", () -> "");
-        redirectMap.put("On prend une monster et on continue de coder jusque 3h du matin.", null);
+        redirectMap.put("On prend une monster et on continue de coder jusque 3h du matin.", new EndGame());
     }
     @Override
     public ButtonState onClickOnButton(Story story, String string) {

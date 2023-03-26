@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class TomAllucination extends TileFrame {
     public TomAllucination() {
-        super(UserType.TOM, "7",
+        super(UserType.TOM, "7452",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

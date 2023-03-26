@@ -9,7 +9,7 @@ public class TomToilette extends TileFrame {
 
     public TomToilette() {
 
-        super(UserType.TOM, "8",
+        super(UserType.TOM, "8sf",
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");

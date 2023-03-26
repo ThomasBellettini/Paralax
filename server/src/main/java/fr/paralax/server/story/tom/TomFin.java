@@ -2,6 +2,7 @@ package fr.paralax.server.story.tom;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
+import fr.paralax.server.story.thomas_b.EndGame;
 
 import java.util.HashMap;
 
@@ -12,7 +13,7 @@ public class TomFin extends TileFrame {
                     TileResponseType.DISCUSSION, new HashMap<>(),
                     "", "",
                     "", () -> "");
-            redirectMap.put("mais que s'est il passé..", null);
+            redirectMap.put("mais que s'est il passé..", new EndGame());
         }
 
         @Override
@@ -22,7 +23,7 @@ public class TomFin extends TileFrame {
 
             if (button.equalsIgnoreCase("mais que s'est il passé")) {
                 if (story.getStoredValue().containsKey("alive")) {
-                    boolean is_alive = (boolean) story.getStoredValue().get("alive").getObject();
+                    boolean is_alive = (boolean) story.getStoredValue().get("alive");
 
                     if (is_alive) {
                         story.setTileSaved(new TomFinVivant().getUuid());
