@@ -9,6 +9,6 @@ public class TomEnForet extends TileFrame {
                     TileResponseType.DISCUSSION, null,
                     "", "",
                     "", () -> "");
-            redirectMap.put("Il se dirige vers la forêt", new TomForet());
+            redirectMap.put("Il se dirige vers la forêt et disparait", new TomFin());
         }
 }

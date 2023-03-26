@@ -20,7 +20,7 @@ public class TomAffameForet extends TileFrame {
         if (state == ButtonState.ERROR) return state;
 
         if (button.equalsIgnoreCase("ces champignons on l'air plutôt bon")) {
-            story.setTileSaved(new TomDefonce().getUuid());
+            story.setTileSaved(new TomForetChampignon().getUuid());
             return ButtonState.REDIRECTION;
         } else if (button.equalsIgnoreCase("mmmmmmh mauvais baille je ferais mieux de continuer ma route")) {
             story.setTileSaved(new TomEnForet().getUuid());
