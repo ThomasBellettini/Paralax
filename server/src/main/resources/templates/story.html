@@ -69,6 +69,7 @@
             divMain.innerHTML = json.html;
         if (json.background && json.background != null && json.background != "")
             divMain.style.background = json.background;
+        else if (json.background == "url('')") divMain.style.background = "black";
         divMain.style.backgroundRepeat = "no-repeat";
 
         divButton.innerHTML = json.button_html;

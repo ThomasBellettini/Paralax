@@ -45,7 +45,9 @@ public class UpdateInformation {
         }
         content.put("html", LanguageUtils.translate(story.getTile().getHtmlContent()));
         content.put("button_html", LanguageUtils.translate(story.getTile().generateButton()));
-        content.put("background", (story.getTile().getPictureBackground().contains("https") ? String.format("url(\'%s\')", story.getTile().getPictureBackground()) : story.getTile().getPictureBackground()));
+        content.put("background", (story.getTile().getPictureBackground().contains("https") ? String.format("url(\'%s\')", story.getTile().getPictureBackground()) : (
+                story.getTile().getPictureBackground().equalsIgnoreCase("blue") || story.getTile().getPictureBackground().equalsIgnoreCase("")? (story.getTile().getPictureBackground().equalsIgnoreCase("blue") ? "blue" : "red") : String.format("url(\'/%s\')", story.getTile().getPictureBackground())
+                )));
         content.put("antagonist", story.getTile().getPictureAntagonist());
         content.put("protagonist", story.getTile().getPictureProtagonist());
         return ResponseEntity.status(HttpStatus.OK).body(content);

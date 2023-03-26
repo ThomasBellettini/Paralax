@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class GohanQuestion extends TileFrame {
 
     public GohanQuestion() {
-        super(UserType.CHOPPER, "3",
+        super(UserType.CHOPPER, "3zef",
                 TileResponseType.RESPONSE, new HashMap<>(),
                 "", "",
                 "", () -> "");
