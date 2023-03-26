@@ -10,9 +10,9 @@ public class ThomasGame extends TileFrame {
     public ThomasGame() {
 
         super(UserType.THOMAS_H, "2",
-                TileResponseType.RESPONSE, new HashMap<>(),
+                TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-            redirectMap.put("...", null);
+            redirectMap.put("...", new ThomasAsk14());
     }
 }

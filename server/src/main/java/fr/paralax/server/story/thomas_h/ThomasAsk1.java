@@ -13,7 +13,7 @@ public class ThomasAsk1 extends TileFrame {
                 TileResponseType.RESPONSE, new HashMap<>(),
                 "", "",
                 "", () -> "");
-            redirectMap.put("Vous sortez d'EPITECH, un trou noir s'y trouve", null);
+            redirectMap.put("Vous sortez <color:\"blue\">d'EPITECH</color>, un trou noir s'y trouve", null);
             redirectMap.put("Rentrer dedans", new ThomasGame());
             redirectMap.put("S'enfuir", new ThomasAsk11());
             redirectMap.put("Retourner à EPITECH", new ThomasAsk10());
