@@ -2,6 +2,8 @@ package fr.paralax.server.story.chopper;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
+import fr.paralax.server.story.thomas_b.EndGame;
+
 import java.util.HashMap;
 public class End10 extends TileFrame {
     public End10() {
@@ -9,7 +11,7 @@ public class End10 extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("Merci, jeune saiyan", null); //TODO:END
+        redirectMap.put("Merci, jeune saiyan", new EndGame());
     }
     @Override
     public ButtonState onClickOnButton(Story story, String string) {

@@ -13,6 +13,4 @@ public class SecondStart extends TileFrame {
                 "", () -> "");
         redirectMap.put("Le sol se mit à trembler, un bruit sourd vient de résonner, et d'un coup plus rien, le noir total.", new SelectGame());
     }
-
-
 }

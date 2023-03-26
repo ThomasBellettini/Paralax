@@ -3,11 +3,13 @@ package fr.paralax.server.story.tom;
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
 
+import java.util.HashMap;
+
 public class TomAffameForet extends TileFrame {
 
         public TomAffameForet() {
             super(UserType.TOM, "10",
-                    TileResponseType.RESPONSE, null,
+                    TileResponseType.RESPONSE, new HashMap<>(),
                     "", "",
                     "", () -> "");
             redirectMap.put("ces champignons on l'air plutôt bon", null);

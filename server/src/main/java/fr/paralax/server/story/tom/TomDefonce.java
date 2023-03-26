@@ -3,10 +3,12 @@ package fr.paralax.server.story.tom;
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
 
+import java.util.HashMap;
+
 public class TomDefonce extends TileFrame {
     public TomDefonce() {
         super(UserType.TOM, "11",
-                TileResponseType.DISCUSSION, null,
+                TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
         redirectMap.put("mais qu'est ce qu'il se passe ?", null);

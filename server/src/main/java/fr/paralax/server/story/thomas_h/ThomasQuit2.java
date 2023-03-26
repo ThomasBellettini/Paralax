@@ -2,6 +2,7 @@ package fr.paralax.server.story.thomas_h;
 
 import fr.paralax.server.entity.TileFrame;
 import fr.paralax.server.entity.story.Story;
+import fr.paralax.server.story.thomas_b.EndGame;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,6 +14,6 @@ public class ThomasQuit2 extends TileFrame {
                 TileResponseType.DISCUSSION, new HashMap<>(),
                 "", "",
                 "", () -> "");
-        redirectMap.put("Des cochons sauvages derrière vous vous ont écrasé", null); //TODO:END
+        redirectMap.put("Des cochons sauvages derrière vous vous ont écrasé", new EndGame());
     }
 }
