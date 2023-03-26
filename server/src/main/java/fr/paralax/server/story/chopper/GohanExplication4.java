@@ -13,8 +13,8 @@ public class GohanExplication4 extends TileFrame {
                 "", () -> "");
         redirectMap.put("Vegeta, Prince Sayen qui t'apprendra la maitrise de ton Ki (et la souffrance). Fais ton choix", null);
         redirectMap.put("Nagzorm", new StartNagzorm());
-        redirectMap.put("Vegeta", new StartVegeta());
-        redirectMap.put("Hasagi", new StartHasagi());
+        redirectMap.put("Vegeta", new StartNagzorm());
+        redirectMap.put("Hasagi", new StartNagzorm());
     }
 
     @Override
