@@ -49,10 +49,7 @@ public class Story extends StorageClass {
     }
 
     public TileFrame getTile() {
-        for (TileFrame tileFrame : TileManager.tileManagerList) {
-            if (tileFrame.getUuid().equalsIgnoreCase(this.tileSaved)) return tileFrame;
-        }
-        return null;
+        return TileManager.getFrameFromUUID(this.tileSaved);
     }
 
     public Map<String, Container> getStoredValue() {

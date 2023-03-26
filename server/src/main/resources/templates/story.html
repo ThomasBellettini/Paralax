@@ -59,16 +59,46 @@
 </head>
 <body>
 <div>
-    <div role="main" class="main" style="padding: 5em;">
-                <div role="main" class="main" style="background: red; height: 512px;">
-
-                </div>
-                <div role="main" class="main" style="background: blue;">
-                    <p>Salam les khoyas voila les réponse potentiel UwU</p>
-                </div>
+    <div role="main" class="main">
+        <div style="background: red; height: 750px; width: 1920px;" id="main">
+        </div>
+        <div style="border-radius: 25px; border: 2px solid black; padding: 20px; margin: 1em; font-size: 32px;" class="text-center">
+            <div id="button">
+            </div>
+        </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (e) {
+        updateThisPageUwU("update_local");
+    })
+
+    function updateThisPageUwU(button) {
+        fetch("/click/" + button, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(response => response.json()).then(json => updatePageWithJSONOwO(json));
+    }
+
+    function updatePageWithJSONOwO(json) {
+        let divMain = document.getElementById("main");
+        let divButton = document.getElementById("button");
+
+        if (json.html && json.html != null)
+            divMain.innerHTML = json.html;
+        if (json.background && json.background != null && json.background != "")
+            divMain.style.background = json.background;
+        divMain.style.backgroundRepeat = "no-repeat";
+
+        divButton.innerHTML = json.button_html;
+    }
+
+</script>
 
 <!-- Vendor -->
 <script src="https://r.shurisko.fr/vendor/jquery/jquery.min.js"></script>
