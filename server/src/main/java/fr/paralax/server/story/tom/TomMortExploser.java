@@ -10,7 +10,7 @@ public class TomMortExploser extends TileFrame {
     public TomMortExploser() {
         super(UserType.TOM, "358778",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "boom.gif", "",
                 "", () -> "");
         redirectMap.put("Boom!!!!", new TomFin());
     }
