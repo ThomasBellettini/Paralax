@@ -11,7 +11,7 @@ public class TomFin extends TileFrame {
         public TomFin() {
             super(UserType.TOM, "30",
                     TileResponseType.DISCUSSION, new HashMap<>(),
-                    "", "",
+                    "surprised.gif", "",
                     "", () -> "");
             redirectMap.put("mais que s'est il passé..", new EndGame());
         }
