@@ -8,11 +8,11 @@ import java.util.HashMap;
 public class GohanQuestion extends TileFrame {
 
     public GohanQuestion() {
-        super(UserType.CHOPPER, "3zef",
+        super(UserType.CHOPPER, "120",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "gohan_shallot.png", "",
                 "", () -> "");
-        redirectMap.put("Qui-es-tu ? Tu es le saiyan légendaire ?", null);
+        redirectMap.put("Je suis Gohan ! Qui-es-tu ? Tu es le saiyan légendaire ?", null);
         redirectMap.put("le quoi ?", new GohanExplication());
         redirectMap.put("C'est moi wesh", new GohanExplication());
         redirectMap.put("Nan nan j'suis juste perdu", new GohanExplication());

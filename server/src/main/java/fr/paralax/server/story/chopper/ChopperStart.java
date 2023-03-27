@@ -11,9 +11,9 @@ public class ChopperStart extends TileFrame {
     public ChopperStart() {
         super(UserType.CHOPPER, "1",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "capsule.png", "",
                 "", () -> "");
-        redirectMap.put("Suite", new ChopperBeggin());
+        redirectMap.put("Ou suis-je, une capsule ?", new ChopperBeggin());
     }
 
 

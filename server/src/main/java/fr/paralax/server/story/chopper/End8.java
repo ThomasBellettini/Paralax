@@ -7,7 +7,7 @@ public class End8 extends TileFrame {
     public End8() {
         super(UserType.CHOPPER, "32",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "victoire_shallot.png", "",
                 "", () -> "");
         redirectMap.put("Co, co, COMMENT ??!", new End9());
     }

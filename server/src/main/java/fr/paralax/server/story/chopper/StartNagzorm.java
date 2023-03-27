@@ -7,7 +7,7 @@ public class StartNagzorm extends TileFrame {
     public StartNagzorm() {
         super(UserType.CHOPPER, "13",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("Salut mon gourmand, quesqu'y t'amènes", null);
         redirectMap.put("*expliquer la situation*", new NagzormQuizz());

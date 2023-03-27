@@ -10,7 +10,7 @@ public class GohanExplication3 extends TileFrame {
     public GohanExplication3() {
         super(UserType.CHOPPER, "10",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "hasagi.png", "",
                 "", () -> "");
         redirectMap.put("Hasagi, plus grand manieur de katana du monde, actuellement en train de former Zakyprod pour etre son successeur", new GohanExplication4());
     }

@@ -7,7 +7,7 @@ public class NagzormQuestion1 extends TileFrame {
     public NagzormQuestion1() {
         super(UserType.CHOPPER, "16",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("Tres bien, tu vas répondre a une serie de question pour obtenis cette force", new NagzormQuestion2());
 }

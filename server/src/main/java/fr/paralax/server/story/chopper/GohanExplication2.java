@@ -10,7 +10,7 @@ public class GohanExplication2 extends TileFrame {
     public GohanExplication2() {
         super(UserType.CHOPPER, "5",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "prez_nagzorm.png", "",
                 "", () -> "");
         redirectMap.put("Option 1 : Nagzorm, plus grand combattant terrien depuis qu'il a battu Satan sur le ring", new GohanExplication3());
     }

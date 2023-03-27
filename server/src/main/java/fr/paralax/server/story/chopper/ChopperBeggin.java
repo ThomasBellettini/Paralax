@@ -10,7 +10,7 @@ public class ChopperBeggin extends TileFrame {
     public ChopperBeggin() {
         super(UserType.CHOPPER, "2",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "crash_capsule.png", "",
                 "", () -> "");
         redirectMap.put("Suite", new Beggin2());
     }

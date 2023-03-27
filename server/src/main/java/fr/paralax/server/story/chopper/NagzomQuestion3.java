@@ -7,7 +7,7 @@ public class NagzomQuestion3 extends TileFrame {
     public NagzomQuestion3() {
         super(UserType.CHOPPER, "18",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("Evidemment ! Deuxieme question, quel est le meilleur combattant MMA ?", null);
         redirectMap.put("Cyril Gane, le 'Bon Gamin'", new NagzormQuestion4());

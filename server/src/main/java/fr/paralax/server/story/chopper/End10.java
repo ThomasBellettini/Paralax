@@ -9,7 +9,7 @@ public class End10 extends TileFrame {
     public End10() {
         super(UserType.CHOPPER, "34",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "cestlafin.png", "",
                 "", () -> "");
         redirectMap.put("Merci, jeune saiyan", new EndGame());
     }

@@ -7,7 +7,7 @@ public class NagzormQuestion2 extends TileFrame {
     public NagzormQuestion2() {
         super(UserType.CHOPPER, "17",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("Qui est le meilleur joueur de foot actuel?", null);
         redirectMap.put("Mbappté, pas content, triplé", new NagzomQuestion3());

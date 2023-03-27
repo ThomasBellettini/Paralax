@@ -7,7 +7,7 @@ public class NagzormQuestion4 extends TileFrame {
     public NagzormQuestion4() {
         super(UserType.CHOPPER, "19",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("(déso Archi), parfait, dernière question. Il est ou le plaisir ?", null);
         redirectMap.put("Le plaisir c'est juste ici", new NagzormQuizzSuccess());

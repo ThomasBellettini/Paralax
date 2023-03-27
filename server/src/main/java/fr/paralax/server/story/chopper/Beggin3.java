@@ -10,9 +10,9 @@ public class Beggin3 extends TileFrame {
     public Beggin3() {
         super(UserType.CHOPPER, "4",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "rencontre_gohan1.jpg", "",
                 "", () -> "");
-        redirectMap.put("Suite", new GohanQuestion());
+        redirectMap.put("Tiens, qui est-ce ?", new GohanQuestion());
     }
 
     @Override

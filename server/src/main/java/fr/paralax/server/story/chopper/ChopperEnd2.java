@@ -7,7 +7,7 @@ public class ChopperEnd2 extends TileFrame {
     public ChopperEnd2() {
         super(UserType.CHOPPER, "26",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "yamcha_goku.png", "",
                 "", () -> "");
         redirectMap.put("Alors tu es venu, je t'attendais...", new ChopperEnd3());
     }

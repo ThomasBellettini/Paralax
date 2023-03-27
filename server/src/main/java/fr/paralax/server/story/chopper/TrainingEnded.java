@@ -7,7 +7,7 @@ public class TrainingEnded extends TileFrame {
     public TrainingEnded() {
         super(UserType.CHOPPER, "21",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "calimero_city.png", "",
                 "", () -> "");
         redirectMap.put("Apres avoir suivi votre entrainement, vous vous rendez à CalimeroCity,<nline> lieu de l'éxécution...", new ChopperEnd1());
     }

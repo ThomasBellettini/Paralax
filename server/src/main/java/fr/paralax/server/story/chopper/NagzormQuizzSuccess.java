@@ -7,7 +7,7 @@ public class NagzormQuizzSuccess extends TileFrame {
     public NagzormQuizzSuccess() {
         super(UserType.CHOPPER, "23",
                 TileResponseType.DISCUSSION, new HashMap<>(),
-                "", "",
+                "nagzorm_salle.png", "",
                 "", () -> "");
         redirectMap.put("Bien joué, tu as reussi toutes les épreuves, je te fais don de ma force, <nline> ma bénédiction est tienne", new TrainingEnded());
 }

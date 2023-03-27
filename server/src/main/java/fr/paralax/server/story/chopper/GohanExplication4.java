@@ -9,7 +9,7 @@ public class GohanExplication4 extends TileFrame {
     public GohanExplication4() {
         super(UserType.CHOPPER, "11",
                 TileResponseType.RESPONSE, new HashMap<>(),
-                "", "",
+                "vegetal.png", "",
                 "", () -> "");
         redirectMap.put("Vegeta, Prince Sayen qui t'apprendra la maitrise de ton Ki (et la souffrance). Fais ton choix", null);
         redirectMap.put("Nagzorm", new StartNagzorm());
